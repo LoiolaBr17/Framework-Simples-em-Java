@@ -1,8 +1,12 @@
 package dev.mateus;
 
+import dev.mateus.model.Cliente;
+import dev.mateus.model.Produto;
+import dev.mateus.repository.InMemoryRepository;
+
 public class Main {
-    class ProdutoRepository extends InMemoryRepository<Produto> {}
-    class ClienteRepository extends InMemoryRepository<Cliente> {}
+    static class ProdutoRepository extends InMemoryRepository<Produto> {}
+    static class ClienteRepository extends InMemoryRepository<Cliente> {}
 
     public static void main(String[] args) {
         ProdutoRepository produtoRepo = new ProdutoRepository();

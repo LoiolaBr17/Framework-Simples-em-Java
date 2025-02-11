@@ -1,5 +1,7 @@
 package dev.mateus.repository;
 
+import java.util.List;
+
 public interface CrudRepository<T> {
     void save(T entity);
     T findById(int id);

@@ -1,6 +1,6 @@
 package dev.mateus.model;
 
-class Cliente {
+public class Cliente {
     private final int id;
     private final String nome;
     private final String email;
@@ -14,5 +14,17 @@ class Cliente {
     @Override
     public String toString() {
         return "Cliente{" + "id=" + id + ", nome='" + nome + '\'' + ", email='" + email + '\'' + '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getEmail() {
+        return email;
     }
 }

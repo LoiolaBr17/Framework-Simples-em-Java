@@ -1,6 +1,11 @@
 package dev.mateus.repository;
 
-class InMemoryRepository<T> implements CrudRepository<T> {
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+ 
+public class InMemoryRepository<T> implements CrudRepository<T> {
     private final Map<Integer, T> storage = new HashMap<>();
     private int currentId = 1;
 
